@@ -88,19 +88,20 @@
 										<form id="reused_form">
 											<div class="form-group">
 												<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-												<input type="text" name="name" class="form-control" placeholder="I'm Falah, and you?">
+												<input type="text" name="name" class="form-control" placeholder="I'm Falah, and you?" required>
 											</div>
 											<div class="form-group">
 												<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-												<input type="email" name="email" class="form-control" placeholder="Put your email so I can reply :)">
+												<input type="email"id="email" name="email" class="form-control" placeholder="Put your email so I can reply :)" required>
 											</div>
 											<div class="form-group">
 												<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
-												<textarea rows="3" name="message" class="form-control" placeholder="Say anything. Feel free."></textarea>
+												<textarea rows="3" name="message" maxlength="6000" class="form-control" placeholder="Say anything. Feel free." required></textarea>
 											</div>
 											<div class="col-md-12"></div>
 											<div class="form-group">
 												<button type="submit" class="btn btn-primary btn-raised btn-block btn-danger">Send Message</button>
+												<form action="http://falizhar.github.io/handler.php"></form>
 											</div>
 										</form>
 										<div id="error_message" style="width:100%; height:100%; display:none; ">
